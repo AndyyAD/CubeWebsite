@@ -1,0 +1,21 @@
+/* ======================== Color ======================== */
+
+:root{
+    --primary-color: #032E15;
+    --secondary-color: #016630;
+    --text-light: #FFFFFF;
+}
+
+/* ======================== Container ======================== */
+
+.container{
+    max-width: 1850px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container2{
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+}

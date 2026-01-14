@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import './variables.css';
+@import './navbar.css';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    height: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+    color: var(--primary-color)
+}
+
+/* ======================== Showcase ======================== */
+
+.showcase {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../assets/showcaseBG.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.showcaseText{
+    margin-top: 11rem;
+}
+
+.awardText {
+    width: 35.6rem;
+    height: 4rem;
+    border-radius: 2rem;
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 100%;
+    color: var(--text-light);
+}
+
+.headText {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 5.6rem;
+    line-height: 112%;
+    letter-spacing: -0.13rem;
+    margin-top: 2.7rem;
+}
+
+.headStats {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.headStats .power{
+    width: 15rem;
+}
+
+.headStats .ingredients{
+    width: 13rem;
+}
+
+.headStats p {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 104%;
+}
+
+.headStats p span {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 7.2rem;
+    line-height: 100%;
+    letter-spacing: 0.4rem;
+    background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.showBTN {
+    width: 18.5rem;
+    height: 4.8rem;
+    border-radius: 10rem;
+    padding: 1.2rem 1.6rem;
+    margin-top: 4rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1.82rem;
+    color: var(--text-light);
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
