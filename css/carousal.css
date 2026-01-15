@@ -1,8 +1,12 @@
-.carousal {
+.carousalWrap {
     width: 61rem;
-    height: 67rem;
-    display: flex;
-    gap: 5rem;
+    aspect-ratio: 4/5;
+    position: relative;
+}
+
+.carousal {
+    width: 100%;
+    height: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     border-radius: 1.6rem;
@@ -12,25 +16,22 @@
     display: none;
 }
 
-.carousal div {
+.carousalTrack {
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide {
     width: 100%;
     flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center
 }
 
-.carousal div img {
+.slide img {
     width: 100%;
-    height: auto;
-    display: block;
-    object-fit: center;
-}
-
-.carousalWrap{
-    width: fit-content;
-    height: fit-content;
-    position: relative;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 1.6rem;
 }
 
 .arrowWrap {
@@ -38,6 +39,24 @@
     inset: auto 2.8rem 1.8rem 2.8rem;
     display: flex;
     justify-content: space-between;
+}
+
+.dotWrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 1rem;
+    height: 1rem;
+    border: 0.152rem solid var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.activeDot {
+    background-color: var(--primary-color);
 }
 
 
@@ -50,6 +69,7 @@
     flex-wrap: wrap;
     gap: 3rem;
     margin-top: 3rem;
+    transition: all 0.3s ease-in-out;
 }
 
 .thumbnail div {
@@ -67,4 +87,10 @@
     object-fit: cover;
     border-radius: 1.6rem;
     display: block;
+}
+
+.activeThumbnail {
+    border: 0.35rem solid var(--secondary-color);
+    border-radius: 1.9rem;
+    box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.2);
 }
