@@ -46,7 +46,7 @@ body {
     background-position: bottom;
 }
 
-.showcaseText{
+.showcaseText {
     margin-top: 11rem;
 }
 
@@ -82,11 +82,11 @@ body {
     margin-top: 4rem;
 }
 
-.headStats .power{
+.headStats .power {
     width: 15rem;
 }
 
-.headStats .ingredients{
+.headStats .ingredients {
     width: 13rem;
 }
 
@@ -107,9 +107,9 @@ body {
     line-height: 100%;
     letter-spacing: 0.4rem;
     background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .showBTN {
@@ -130,11 +130,134 @@ body {
 
 /* ======================== Product Display ======================== */
 
-.product{
+.product {
     margin-top: 15rem;
     margin-bottom: 15rem;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     gap: 10.8rem
+}
+
+.productRight {
+    width: 100%;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.stars {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.stars::before {
+    content: "★★★★★";
+    letter-spacing: 0.3rem;
+    background: linear-gradient(90deg,
+            var(--green-stars) calc(var(--rating) / 5 * 100%),
+            var(--grey-stars) calc(var(--rating) / 5 * 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.reviews {
+    margin-top: 0.3rem;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.prodDesc {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+/* ======================== Collection Display ======================== */
+
+.collection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 11.4rem
+}
+
+.collectionRight {
+    width: 59rem;
+    height: 71rem;
+}
+
+.collectionRight img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+
+.collectionLeft {
+    width: 62rem;
+}
+
+.accordian {
+    margin-top: 3.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.accordianItem {
+    border: 0.1rem solid var(--border-grey);
+    border-radius: 0.8rem;
+}
+
+.accmain {
+    padding: 2.4rem 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accHead {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 0.3rem;
+    cursor: pointer;
+}
+
+.accText {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding: 2.4rem;
+    display: none;
+}
+
+.minus{
+    display: none;
+}
+
+.accActive .accText {
+    display: block;
+}
+
+.accActive .accmain .acctoggle .plus{
+    display: none;
+}
+
+.accActive .accmain .acctoggle .minus{
+    display: block;
+}
+
+#collectionImg {
+  transition: opacity 0.5s ease;
+}
+
+#collectionImg.fade-out {
+  opacity: 0;
 }

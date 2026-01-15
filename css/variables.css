@@ -3,7 +3,10 @@
 :root{
     --primary-color: #032E15;
     --secondary-color: #016630;
+    --green-stars: #00c950;
+    --grey-stars: #b6b6b6;
     --text-light: #FFFFFF;
+    --border-grey: #d6d6d6;
 }
 
 /* ======================== Container ======================== */
