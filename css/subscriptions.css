@@ -1,0 +1,286 @@
+.product {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10.8rem
+}
+
+.productRight {
+    width: 100%;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.stars {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.stars::before {
+    content: "★★★★★";
+    letter-spacing: 0.3rem;
+    background: linear-gradient(90deg,
+            var(--green-stars) calc(var(--rating) / 5 * 100%),
+            var(--grey-stars) calc(var(--rating) / 5 * 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.reviews {
+    margin-top: 0.3rem;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.prodDesc {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+
+.singleSubs,
+.doubleSubs {
+    border: 0.1rem solid var(--border-grey);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+}
+
+.mostPopular {
+    width: 100%;
+    height: 4.3rem;
+    background: linear-gradient(270deg, #032E15 0%, #008236 51.92%, #00C950 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mostPopular p {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--text-light);
+}
+
+.prodDetails {
+    padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radioWrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.radioWrap input[type="radio"] {
+    width: 1.6rem;
+    height: 1.6rem;
+    accent-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.radioWrap label {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2%;
+    cursor: pointer;
+}
+
+.price {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.price span {
+    font-weight: 300;
+    text-decoration: line-through;
+    color: var(--grey-stars);
+    margin-left: 1rem;
+}
+
+.prodSelect {
+    padding: 0 3rem 2.6rem 5.3rem;
+}
+
+.fragRadioWrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.7rem;
+}
+
+.frag {
+    width: 12.7rem;
+    height: 14.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--frag-bg-grey);
+    padding: 1rem 0.8rem 0.7rem 0.8rem;
+    position: relative;
+}
+
+.frag img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0.7rem;
+}
+
+.frag div {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.frag input[type="radio"] {
+    width: 1.4rem;
+    height: 1.4rem;
+    accent-color: var(--secondary-color);
+    opacity: 0.65;
+    cursor: pointer;
+}
+
+.frag label {
+    font-weight: 300;
+    font-size: 1.3rem;
+    opacity: 0.65;
+}
+
+.badge {
+    position: absolute;
+    top: -0.5rem;
+    right: 0.8rem;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--text-light);
+    padding: 0.2rem 0.4rem;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    border-top-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+
+.fragrance1 {
+    padding-top: 1.8rem;
+    border-top: 0.1rem solid var(--table-margin);
+}
+
+.fragrance1 h4 {
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-bottom: 1.1rem;
+}
+
+.included {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    color: var(--text-grey);
+    margin-bottom: 1.5rem;
+}
+
+.everyMonth {
+    width: 32%;
+    height: 20rem;
+    border: 0.1rem solid var(--border-grey);
+    border-radius: 6.07px;
+    padding: 0.8rem 1.1rem;
+}
+
+.everyMonth img {
+    width: 12rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.oneTime {
+    width: 62%;
+    height: 20rem;
+    border: 0.1rem solid var(--border-grey);
+    border-radius: 6.07px;
+    padding: 1rem 1.4rem;
+    position: relative;
+}
+
+.oneTime div {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.oneTime div img {
+    width: 8rem;
+    height: auto;
+}
+
+.oneTime p span {
+    font-weight: 700;
+    color: var(--primary-color)
+}
+
+.othDetails {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.09rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 0.7rem;
+}
+
+.othDetails span {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.subs .prodSelect {
+    display: none;
+}
+
+.subs.activeSubs .prodSelect {
+    display: block;
+}
+
+.atcBTN{
+    width: 100%;
+    height: 5.6rem;
+    border-radius: 3rem;
+    padding: 1.2rem 2.4rem;
+    margin-top: 1.2rem;
+    line-height: 2.8rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--text-light);
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btnHide{
+    display: none;
+}

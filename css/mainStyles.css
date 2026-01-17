@@ -4,6 +4,7 @@
 @import './navAndFoot.css';
 @import './carousal.css';
 @import './table.css';
+@import './subscriptions.css';
 
 /* ======================== Showcase ======================== */
 
@@ -98,57 +99,7 @@
     border: none;
     overflow: hidden;
     cursor: pointer;
-}
-
-/* ======================== Product Display ======================== */
-
-.product {
-    margin-top: 15rem;
-    margin-bottom: 15rem;
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    gap: 10.8rem
-}
-
-.productRight {
-    width: 100%;
-}
-
-.rating {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 0.8rem;
-    margin-bottom: 2rem;
-}
-
-.stars {
-    font-size: 2rem;
-    display: inline-block;
-}
-
-.stars::before {
-    content: "★★★★★";
-    letter-spacing: 0.3rem;
-    background: linear-gradient(90deg,
-            var(--green-stars) calc(var(--rating) / 5 * 100%),
-            var(--grey-stars) calc(var(--rating) / 5 * 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.reviews {
-    margin-top: 0.3rem;
-    font-weight: 300;
-    line-height: 100%;
-}
-
-.prodDesc {
-    font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 2rem;
+    transition: all 0.5s ease-in-out;
 }
 
 /* ======================== Collection Display ======================== */
@@ -207,8 +158,11 @@
     font-weight: 300;
     font-size: 1.6rem;
     line-height: 2rem;
-    padding: 2.4rem;
-    display: none;
+    padding: 0 2.4rem;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 
 .plus,
@@ -221,7 +175,9 @@
 }
 
 .accActive .accText {
-    display: block;
+    max-height: fit-content; 
+    opacity: 1;
+    padding: 2.4rem;
 }
 
 .accActive .accmain .acctoggle .plus {
@@ -306,4 +262,11 @@
     border: none;
     overflow: hidden;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;   
+}
+
+/* ======================== Effects ======================== */
+
+.primaryBTN:hover {
+    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--primary-color) 100%);
 }

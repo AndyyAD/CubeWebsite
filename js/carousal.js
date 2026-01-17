@@ -14,6 +14,7 @@ const totalSlides = slides.length;
 function updateCarousal() {
     track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 
+    // Changes the dots highlighted according to the image
     dots.forEach((dot, index) => {
         if (index === currentIndex) {
             dot.classList.add('activeDot');
@@ -22,6 +23,7 @@ function updateCarousal() {
         }
     });
 
+    // Changes the thumbnail highlighted according to the image
     thumbs.forEach((thumb, index) => {
         if (index === currentIndex) {
             thumb.classList.add('activeThumbnail');
@@ -31,6 +33,7 @@ function updateCarousal() {
     });
 }
 
+// changes the carousal images when clicked on next button
 next.addEventListener('click', () => {
     if (currentIndex < totalSlides - 1) {
         currentIndex++;
@@ -41,6 +44,7 @@ next.addEventListener('click', () => {
     }
 });
 
+// changes the carousal images when clicked on previous button
 prev.addEventListener('click', () => {
     if (currentIndex > 0) {
         currentIndex--;
@@ -51,6 +55,7 @@ prev.addEventListener('click', () => {
     }
 })
 
+// changes the carousal images according to dot clicked
 dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
         currentIndex = index;
@@ -58,6 +63,7 @@ dots.forEach((dot, index) => {
     });
 });
 
+// changes the carousal images according to thumbnail clicked
 thumbs.forEach((thumb, index) => {
     thumb.addEventListener('click', () => {
         currentIndex = index;

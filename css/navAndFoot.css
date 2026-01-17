@@ -34,12 +34,44 @@
     display: flex;
     align-items: center;
     gap: 0.4rem;
+    cursor: pointer;
 }
 
 .navActions {
     display: flex;
     align-items: center;
     gap: 2rem;
+    position: relative;
+}
+
+.search-container {
+    position: absolute;
+    right: 16.5rem;
+    overflow: hidden;
+    width: 0;
+    transition: width 0.4s ease;
+}
+
+.search-container input {
+    width: 25rem;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 150%;
+    background-color: var(--text-light);
+    border: 0.1rem solid var(--text-grey);
+    color: var(--text-grey);
+    outline: none;
+}
+
+.search-container.activeSearch {
+    width: 25rem;
+}
+
+.searchIcon {
+    cursor: pointer;
 }
 
 .shopBTN {
@@ -85,6 +117,7 @@
     font-weight: 300;
     font-size: 1.4rem;
     color: var(--text-light);
+    display: inline-block;
 }
 
 .linkGroup li{
@@ -151,6 +184,7 @@
     border: none;
     overflow: hidden;
     cursor: pointer;
+    position: relative;;
 }
 
 .newsletter p {
@@ -165,3 +199,38 @@
     color: var(--text-light);
     text-decoration: underline;
 }
+
+/* ======================== Effects ======================== */
+
+.navMenu .navItem a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.15rem;
+    background-color: var(--secondary-color); 
+    transition: width 0.3s ease-in-out;
+    margin-top: -0.3rem;
+}
+
+.navMenu .navItem a:hover::after {
+    width: 100%;
+}
+
+.navMenu .navItem a:hover{
+    color: var(--secondary-color);
+}
+
+.linkGroup a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.1rem;
+    background-color: var(--text-light); 
+    transition: width 0.3s ease-in-out;
+    margin-top: -0.1rem;
+}
+
+.linkGroup a:hover::after {
+    width: 100%;
+}
+

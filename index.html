@@ -11,21 +11,26 @@
 <body>
     <section class="showcase">
         <nav class="nav container">
-            <h1 class="logo">GTG</h1>
+            <a href="/">
+                <h1 class="logo">GTG</h1>
+            </a>
             <ul class="navMenu">
-                <li class="navItem"><a href="#">Home</a></li>
+                <li class="navItem"><a href="/">Home</a></li>
                 <li class="navItem shop">
-                    <a href="#">Shop</a>
+                    <a href="#shop">Shop</a>
                     <img src="./assets/downArrow.svg" loading="lazy" alt="Arrow pointing down to open something">
                 </li>
-                <li class="navItem"><a href="#">Fragrance</a></li>
-                <li class="navItem"><a href="#">About Us</a></li>
-                <li class="navItem"><a href="#">Blog</a></li>
-                <li class="navItem"><a href="#">Contact</a></li>
+                <li class="navItem"><a href="#shop">Fragrance</a></li>
+                <li class="navItem"><a href="#collection">About Us</a></li>
+                <li class="navItem"><a href="/">Blog</a></li>
+                <li class="navItem"><a href="/">Contact</a></li>
             </ul>
             <div class="navActions">
-                <img src="./assets/search.svg" loading="lazy" alt="search icon">
-                <button class="shopBTN">Shop Now</button>
+                <div class="search-container">
+                    <input type="text" placeholder="Search" />
+                </div>
+                <img src="./assets/search.svg" loading="lazy" alt="search icon" id="searchIcon" class="searchIcon">
+                <button class="shopBTN primaryBTN wrapBTN">Shop Now</button>
             </div>
         </nav>
 
@@ -40,11 +45,11 @@
                 <p class="ingredients"> <span>9</span> ingredients </p>
                 <p class="customer"> <span>20K+</span> happy customers </p>
             </div>
-            <button class="showBTN">Shop Now</button>
+            <button class="showBTN primaryBTN">Shop Now</button>
         </div>
     </section>
 
-    <section class="product container2">
+    <section class="product container2" id="shop">
         <div class="productLeft">
             <div class="carousalWrap">
                 <div class="carousal">
@@ -110,17 +115,164 @@
             </div>
             <p class="prodDesc">Experience the timeless allure backed by modern artistry, captured in every bottle of
                 our fragrance. Crafted for those who seek to elevate their essence with purpose and sophistication.</p>
-            <div class="singleSubs">
-                
-                
+            <div class="singleSubs subs activeSubs">
+                <div class="mostPopular">
+                    <p> Most Popular </p>
+                </div>
+                <div class="prodDetails">
+                    <div class="radioWrap">
+                        <input type="radio" name="subType" id="singleSub" checked>
+                        <label for="singleSub"> Single Subscription </label>
+                    </div>
+                    <p class="price"> $99.99 <span> $146 </span> </p>
+                </div>
+                <div class="prodSelect">
+                    <div class="fragrance1">
+                        <h4> Choose a Fragrance </h4>
+                        <div class="fragRadioWrap">
+                            <div class="frag bestSeller">
+                                <span class="badge">Best-Seller</span>
+                                <div>
+                                    <input type="radio" name="fragType" id="original1" value="original" checked>
+                                    <label for="original1"> Original </label>
+                                </div>
+                                <img src="./assets/transPar1.png" alt="">
+                            </div>
+                            <div class="frag">
+                                <div>
+                                    <input type="radio" name="fragType" id="lily1" value="lily">
+                                    <label for="lily1"> Lily </label>
+                                </div>
+                                <img src="./assets/transPar2.png" alt="">
+                            </div>
+                            <div class="frag">
+                                <div>
+                                    <input type="radio" name="fragType" id="rose1" value="rose">
+                                    <label for="rose1"> Rose </label>
+                                </div>
+                                <img src="./assets/transPar3.png" alt="">
+                            </div>
+                        </div>
+                        <h4> What's Included: </h4>
+                        <div class="included">
+                            <div class="everyMonth">
+                                <p> Every 30 days </p>
+                                <img src="./assets/transPar1.png" alt="">
+                            </div>
+                            <div class="oneTime">
+                                <p> One Time <span> (Free) </span> </p>
+                                <div>
+                                    <img src="./assets/transPar1.png" alt="">
+                                    <img src="./assets/transPar2.png" alt="">
+                                    <img src="./assets/transPar3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="othDetails"> <img src="./assets/SealCheck.svg" alt=""> 1 bottle shipped monthly </p>
+                        <p class="othDetails"> <img src="./assets/SealCheck.svg" alt=""> <span> Free </span> Sampler for
+                            original, lily and rose fragrances </p>
+                        <p class="othDetails"> <img src="./assets/SealCheck.svg" alt=""> <span> 50% OFF Shipping </span>
+                        </p>
+                        <p class="othDetails"> <img src="./assets/SealCheck.svg" alt=""> Pause or Cancel Anytime after 3
+                            months minimum </p>
+                        <p class="othDetails"> <img src="./assets/SealCheck.svg" alt=""> 28 Day Money Back Guarantee*
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="doubleSubs">
-
+            <div class="doubleSubs subs">
+                <div class="prodDetails">
+                    <div class="radioWrap">
+                        <input type="radio" name="subType" id="doubleSub">
+                        <label for="doubleSub"> Double Subscription </label>
+                    </div>
+                    <p class="price"> $169.99 <span> $246 </span> </p>
+                </div>
+                <div class="prodSelect">
+                    <div class="fragrance1">
+                        <h4> Choose Fragrance 1 </h4>
+                        <div class="fragRadioWrap">
+                            <div class="frag bestSeller">
+                                <span class="badge">Best-Seller</span>
+                                <div>
+                                    <input type="radio" name="fragType1" id="original1" value="original" checked>
+                                    <label for="original1"> Original </label>
+                                </div>
+                                <img src="./assets/transPar1.png" alt="">
+                            </div>
+                            <div class="frag">
+                                <div>
+                                    <input type="radio" name="fragType1" id="lily1" value="lily">
+                                    <label for="lily1"> Lily </label>
+                                </div>
+                                <img src="./assets/transPar2.png" alt="">
+                            </div>
+                            <div class="frag">
+                                <div>
+                                    <input type="radio" name="fragType1" id="rose1" value="rose">
+                                    <label for="rose1"> Rose </label>
+                                </div>
+                                <img src="./assets/transPar3.png" alt="">
+                            </div>
+                        </div>
+                        <h4> Choose Fragrance 2 </h4>
+                        <div class="fragRadioWrap">
+                            <div class="frag bestSeller">
+                                <span class="badge">Best-Seller</span>
+                                <div>
+                                    <input type="radio" name="fragType2" id="original2" value="original" checked>
+                                    <label for="original1"> Original </label>
+                                </div>
+                                <img src="./assets/transPar1.png" alt="">
+                            </div>
+                            <div class="frag">
+                                <div>
+                                    <input type="radio" name="fragType2" id="lily1" value="lily">
+                                    <label for="lily1"> Lily </label>
+                                </div>
+                                <img src="./assets/transPar2.png" alt="">
+                            </div>
+                            <div class="frag">
+                                <div>
+                                    <input type="radio" name="fragType2" id="rose1" value="rose">
+                                    <label for="rose1"> Rose </label>
+                                </div>
+                                <img src="./assets/transPar3.png" alt="">
+                            </div>
+                        </div>
+                        <h4> What's Included: </h4>
+                        <div class="included">
+                            <div class="everyMonth">
+                                <p> Every 30 days </p>
+                                <img src="./assets/transPar1.png" alt="">
+                            </div>
+                            <div class="oneTime">
+                                <p> One Time <span> (Free) </span> </p>
+                                <div>
+                                    <img src="./assets/transPar1.png" alt="">
+                                    <img src="./assets/transPar2.png" alt="">
+                                    <img src="./assets/transPar3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="othDetails"> <img src="./assets/SealCheck.svg" alt=""> 2 bottle shipped monthly </p>
+                        <p class="othDetails"> <img src="./assets/SealCheck.svg" alt=""> <span> Free </span> Sampler for
+                            original, lily and rose fragrances </p>
+                        <p class="othDetails"> <img src="./assets/SealCheck.svg" alt=""> <span> 50% OFF Shipping </span>
+                        </p>
+                        <p class="othDetails"> <img src="./assets/SealCheck.svg" alt=""> Pause or Cancel Anytime after 3
+                            months minimum </p>
+                        <p class="othDetails"> <img src="./assets/SealCheck.svg" alt=""> 28 Day Money Back Guarantee*
+                        </p>
+                    </div>
+                </div>
             </div>
+            <button class="atcBTN primaryBTN" id="atcBTN"> Add to Cart </button>
+            <button class="atcBTN primaryBTN btnHide" id="gtcBTN"> Go to Cart </button>
         </div>
     </section>
 
-    <section class="collection container2">
+    <section class="collection container2" id="collection">
         <div class="collectionLeft">
             <h1> Our Collection </h1>
             <div class="accordian">
@@ -276,7 +428,7 @@
                 <td class="oth"> <img class="markings" loading="lazy" src="./assets/blackTick.svg" alt=""> </td>
             </tr>
         </table>
-        <button class="tryBTN"> Try it Risk-Free </button>
+        <button class="tryBTN primaryBTN"> Try it Risk-Free </button>
     </section>
 
     <footer class="footer">
@@ -320,8 +472,9 @@
                     <div class="inputWrap">
                         <input type="email" placeholder="Enter your email">
                         <button class="subscribeBTN"> Subscribe </button>
-                    </div> 
-                    <p> By subscribing you agree to with our <a href="#">Privacy Policy</a> and provide consent to receive updates from our company. </p>
+                    </div>
+                    <p> By subscribing you agree to with our <a href="#">Privacy Policy</a> and provide consent to
+                        receive updates from our company. </p>
                 </div>
             </div>
     </footer>
@@ -329,6 +482,8 @@
     <script src="./js/carousal.js"></script>
     <script src="./js/accordian.js"></script>
     <script src="./js/count.js"></script>
+    <script src="./js/other.js"></script>
+    <script src="./js/subscription.js"></script>
 </body>
 
 </html>
