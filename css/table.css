@@ -1,0 +1,87 @@
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 8rem;
+}
+
+table th {
+    text-align: left;
+    padding: 1.8rem 8.8rem 1.8rem 1.5rem;
+}
+
+table tr:not(:first-child) th {
+    color: var(--table-margin);
+}
+
+table tr td.gtg {
+    background-color: var(--gtg-table-bg);
+}
+
+table tr:first-child td.gtg {
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+table tr:last-child td.gtg {
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+table tr td,
+table tr th {
+    border-bottom: 0.1rem solid var(--table-margin);
+}
+
+table tr td.gtg {
+    border-bottom: 0.1rem dashed var(--table-margin);
+}
+
+
+.tableHead .gtg img {
+    width: 8.8rem;
+    height: 8.8rem;
+    object-fit: cover;
+    object-position: top left;
+    border-radius: 1.5rem;
+    display: block;
+    margin-top: 3.8rem;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+}
+
+.tableHead .oth img {
+    width: 10rem;
+    height: 8.8rem;
+    object-fit: cover;
+    object-position: top left;
+    border-radius: 1.5rem;
+    display: block;
+    margin-top: 3.8rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.tableHead .gtg p {
+    font-weight: 300;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.tableHead .oth p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.potencyConc td,
+.bottleDesign td {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: var(--table-margin)
+}
+
+.markings {
+    height: 2.5rem;
+    width: 2.5rem;
+}

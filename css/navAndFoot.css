@@ -58,3 +58,110 @@
     cursor: pointer;
 }
 
+/* ======================== Footer ======================== */
+
+.footer {
+    padding: 7.5rem 0 9.3rem 0;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.footer h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    margin-bottom: 3rem;
+}
+
+.linkWrap {
+    display: flex;
+    gap: 19rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkGroup a {
+    font-family: "Oxanium", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: var(--text-light);
+}
+
+.linkGroup li{
+    padding: 0.8rem 0;
+}
+
+.smLinks {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.footerLinks {
+    width: 50%;
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter {
+    width: 50%;
+}
+
+.newsletter h4 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: var(--text-light);
+    margin-bottom: 2.4rem;
+}
+
+.inputWrap input {
+    width: 36.5rem;
+    height: 4.8rem;
+    padding: 1.2rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 150%;
+    background-color: transparent;
+    border: 0.1rem solid var(--text-light);
+    color: var(--text-light)
+}
+
+.inputWrap input::placeholder {
+    font-family: "Inter", sans-serif;
+    color: var(--text-light);
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 150%
+}
+
+.subscribeBTN {
+    width: 13rem;
+    height: 4.8rem;
+    padding: 1.2rem 2.4rem;
+    margin-left: 1.6rem;
+    background-color: var(--subs-btn);
+    line-height: 1.6rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--text-light);
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.newsletter p {
+    margin-top: 1.6rem;
+    font-family: "Oxanium", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+
+.newsletter p a {
+    color: var(--text-light);
+    text-decoration: underline;
+}

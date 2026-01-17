@@ -41,6 +41,11 @@
     justify-content: space-between;
 }
 
+.rightArrow,
+.leftArrow {
+    cursor: pointer;
+}
+
 .dotWrap {
     display: flex;
     align-items: center;
@@ -79,6 +84,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .thumbnail img {
