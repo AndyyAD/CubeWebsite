@@ -1,6 +1,9 @@
 const searchIcon = document.getElementById("searchIcon");
 const searchContainer = document.querySelector(".search-container");
 
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
 // Makes the search box visible when clicked on search icon
 searchIcon.addEventListener("click", () => {
     searchContainer.classList.toggle("activeSearch");
@@ -20,4 +23,10 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
         searchContainer.classList.remove("activeSearch");
     }
+});
+
+//working of hamburger menu
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 });

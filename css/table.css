@@ -85,3 +85,54 @@ table tr td.gtg {
     height: 2.5rem;
     width: 2.5rem;
 }
+
+/* ======================== Media Queries ======================== */
+
+@media (max-width: 850px) {
+    table {
+        margin-bottom: 4rem;
+    }
+
+    table th {
+        padding: 1rem 2rem 1rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    table td {
+        font-size: 1.2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .tableHead .gtg img,
+    .tableHead .oth img {
+        width: 6rem;
+        height: 6rem;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tableHead .gtg p {
+        font-size: 1.4rem;
+        padding-top: 0.5rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .tableHead .oth p {
+        font-size: 1rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .markings {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .potencyConc td,
+    .bottleDesign td {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+}

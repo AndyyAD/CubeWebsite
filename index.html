@@ -6,34 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTG - Perfumes</title>
     <link rel="stylesheet" href="./css/mainStyles.css">
+    <link rel="stylesheet" href="./css/carousal.css">
+    <link rel="stylesheet" href="./css/table.css">
 </head>
 
 <body>
+
+    <!------- Header and Navbar Section ------->
+
     <section class="showcase">
-        <nav class="nav container">
-            <a href="/">
-                <h1 class="logo">GTG</h1>
-            </a>
-            <ul class="navMenu">
-                <li class="navItem"><a href="/">Home</a></li>
-                <li class="navItem shop">
-                    <a href="#shop">Shop</a>
-                    <img src="./assets/downArrow.svg" loading="lazy" alt="Arrow pointing down to open something">
-                </li>
-                <li class="navItem"><a href="#shop">Fragrance</a></li>
-                <li class="navItem"><a href="#collection">About Us</a></li>
-                <li class="navItem"><a href="/">Blog</a></li>
-                <li class="navItem"><a href="/">Contact</a></li>
-            </ul>
-            <div class="navActions">
-                <div class="search-container">
-                    <input type="text" placeholder="Search" />
+        <nav class="nav">
+            <div class="navmain container">
+                <a href="/">
+                    <h1 class="logo">GTG</h1>
+                </a>
+                <ul class="navMenu" id="navMenu">
+                    <li class="navItem"><a href="/">Home</a></li>
+                    <li class="navItem shop">
+                        <a href="#shop">Shop</a>
+                        <img src="./assets/downArrow.svg" loading="lazy" alt="Arrow pointing down to open something">
+                    </li>
+                    <li class="navItem"><a href="#shop">Fragrance</a></li>
+                    <li class="navItem"><a href="#collection">About Us</a></li>
+                    <li class="navItem"><a href="/">Blog</a></li>
+                    <li class="navItem"><a href="/">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navActions">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search" />
+                    </div>
+                    <img src="./assets/search.svg" loading="lazy" alt="search icon" id="searchIcon" class="searchIcon">
+                    <button class="shopBTN primaryBTN wrapBTN">Shop Now</button>
                 </div>
-                <img src="./assets/search.svg" loading="lazy" alt="search icon" id="searchIcon" class="searchIcon">
-                <button class="shopBTN primaryBTN wrapBTN">Shop Now</button>
             </div>
         </nav>
-
         <div class="showcaseText container2">
             <div class="awardText">
                 <img src="./assets/Medal.svg" loading="lazy" alt="">
@@ -48,6 +59,8 @@
             <button class="showBTN primaryBTN">Shop Now</button>
         </div>
     </section>
+
+    <!------- Product Section ------->
 
     <section class="product container2" id="shop">
         <div class="productLeft">
@@ -107,6 +120,9 @@
                 </div>
             </div>
         </div>
+
+        <!------- Single Subscription part ------->
+
         <div class="productRight">
             <h1>GTG Perfumes</h1>
             <div class="rating">
@@ -180,6 +196,9 @@
                     </div>
                 </div>
             </div>
+
+            <!------- Double Subscription part ------->
+
             <div class="doubleSubs subs">
                 <div class="prodDetails">
                     <div class="radioWrap">
@@ -272,6 +291,8 @@
         </div>
     </section>
 
+    <!------- Collection Section ------->
+
     <section class="collection container2" id="collection">
         <div class="collectionLeft">
             <h1> Our Collection </h1>
@@ -327,6 +348,8 @@
         </div>
     </section>
 
+    <!------- Statistics section ------->
+
     <section class="stats" id="stats">
         <div class="container3 statWrap">
             <div class="stat">
@@ -347,6 +370,8 @@
             </div>
         </div>
     </section>
+
+    <!------- GTG Table Setction ------->
 
     <section class="tableWrap container4">
         <div class="seperator"></div>
@@ -431,6 +456,8 @@
         <button class="tryBTN primaryBTN"> Try it Risk-Free </button>
     </section>
 
+    <!------- Footer ------->
+
     <footer class="footer">
         <div class="container">
             <h1> GTG </h1>
@@ -478,6 +505,8 @@
                 </div>
             </div>
     </footer>
+
+    <!------- Linking all the javascript code ------->
 
     <script src="./js/carousal.js"></script>
     <script src="./js/accordian.js"></script>
